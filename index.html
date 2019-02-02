@@ -11,8 +11,8 @@
               <img class="logo" src="" alt="Техномарт">
             </p>
             <input type="text" name="search" placeholder="Поиск">
-            <a href="#" class="bookmarks">Закладки</a>
-            <a href="#" class="cart">Корзина</a>
+            <a href="#" class="bookmarks">Закладки:0</a>
+            <a href="#" class="cart">Корзина:0</a>
             <button class="purchase">Оформить заказ</button>
         </section>
 
@@ -188,9 +188,37 @@
           <section class="contacts">
             <h3>Контакты</h3>
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-            <p><img src="img/mini-map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19"></p>
+            <p tabindex="0"><img src="img/mini-map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19"></p>
             <a href="" class="button button-red">Заблудились? Напишите нам!</a>
           </section>
+
+
+          <!-- Hidden popup -->
+
+          <section class="appointment visually-hidden">
+            <h2 class="visually-hidden">Напишите нам</h2>
+            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="appointment-item">
+                <label for="appointment-name">Ваше имя</label>
+                <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+              </p>
+              <p class="appointment-item">
+                <label for="appointment-email">Ваш e-mail</label>
+                <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+              </p>
+
+              <label class="feedback-area" for="textarea-form">Текст письма:</label><br>
+              <textarea class="feedback-area-bar" placeholder="В свободной форме" name="text-area" id="textarea-form" ></textarea><br>
+      
+              <button class="button" type="submit">Отправить</button>
+      
+              <button class="button" type="button"><span class="visually-hidden">Закрыть</span></button>
+            </form> 
+          </section>
+
+
+
+
     </main>
 
     <footer>
@@ -241,6 +269,12 @@
 
 
     </footer>
+
+
+    <!-- Hidden pop-up -->
+
+
+    
 
   </body>
 </html>

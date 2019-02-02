@@ -11,7 +11,7 @@
               <img class="logo" src="" alt="Техномарт">
             </p>
             <input type="text" name="search" placeholder="Поиск">
-            <a href="#" class="bookmarks">Закладки</a>
+            <a href="#" class="bookmarks">Закладки:0</a>
             <a href="#" class="cart cart-packed">Корзина:10</a>
             <button class="purchase">Оформить заказ</button>
         </section>
@@ -64,9 +64,51 @@
         </p>
 
         <section class="filters">
+          
             <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosh" id="filter-bosh" checked>
+                    <label for="filter-bosh">BOSH</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="inter" id="filter-inter">
+                    <label for="filter-inter">ИНТЕРСКОЛ</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makito" id="filter-makito" checked>
+                    <label for="filter-makito">MAKITA</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                    <label for="filter-dewalt">DEWALT</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                    <label for="filter-hitachi">HITACHI</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Питание</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accum" id="filter-accum" checked>
+                    <label for="filter-accum">АККУМУЛЯТОРНЫЕ</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="net" id="filter-net" >
+                    <label for="filter-net">СЕТЕВЫЕ</label>
+                  </li>
 
-            <!-- ТУТ БУДЕТ ФОРМА -->
+                </ul>
+              </fieldset>
+              <button type="submit" class="filter-button button">Показать</button>
+            </form>
+         
         </section>
 
 
@@ -187,6 +229,12 @@
                     <li class="pagination-item"><a href="#">3</a></li>
                     <li class="pagination-item pagination-item-next"><a href="#">Следущая</a></li>
              </ul>
+        </section>
+
+        <section class="product-info">
+          <b>ПАРА СЛОВ О ПЕРФОРАТОРАХ</b>
+
+          <p class="few-words">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </section>
     </main>
 
