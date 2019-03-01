@@ -2084,7 +2084,6 @@ fieldset {
 
 
 
-
 .filter-option-power input[type="radio"]+label::before {
   position: absolute;
   content: "";
