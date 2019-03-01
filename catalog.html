@@ -11,10 +11,10 @@
     <header class="main-header">
         <section class="header-top">
             <div class="container df">
-            <p class="header-logo" tabindex="0">
-              Техномарт
-            </p>
-            <input class="header-search" type="text" name="search" placeholder="Поиск">
+                <p class="header-logo" tabindex="0">
+                    ТЕХНОМАРТ
+                  </p>
+            <form class="search" action="https://echo.htmlacademy.ru" method="post"><input class="header-search" type="text" name="search" placeholder="Поиск:"></form>
             <a href="#" class="bookmarks">Закладки: 0</a>
             <a href="#" class="cart cart-packed">Корзина: 10</a>
             <button class="purchase">Оформить заказ</button>
@@ -332,6 +332,31 @@
 
           <button class="button btn-close" type="button"><span class="visually-hidden">Закрыть</span></button>
         </section>
+
+
+        <!-- Hidden popup -->
+
+        <section class="hidden-catalog">
+          <div class="hidden-catalog-wrap">
+            <div class="catalog-popup-top">
+              <p>Товар добавлен в корзину!</p>
+            </div>
+
+            <div class="catalog-popup-buttons">
+              
+               <div class="catalog-buttons-flex"> 
+                <button class="button button-catalog-buy" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+
+                <button class="button " type="submit">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+
+                <button class="button button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+               </div>
+            </div>
+
+          </div>
+        </section>
+
+
     </main>
 
     <footer>
@@ -384,7 +409,8 @@
 
 
     </footer>
-
+<!-- Script -->
+  <script src="js/java-script.js"></script>
   </body>
   </html>
   

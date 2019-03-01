@@ -54,6 +54,10 @@
     </header>
 
     <main>
+
+      <input class="visually-hidden input-slider-1" type="radio" id="slider-1" name="main-slider" checked>
+      <input class="visually-hidden input-slider-2" type="radio" id="slider-2" name="main-slider">
+
       <section class="store-main-features">
         <div class="container">
           <h2 class="visually-hidden">Главные товары и предложения магазина</h2>
@@ -73,9 +77,25 @@
           </ul>
 
           <div class="slider-section">
+              <div class="slider-controls">
+                  <label class="slider-1" for="slider-1">Первый</label>
+                  <label class="slider-2" for="slider-2">Второй</label>
+              </div>
+              <div class="slider-controls">
+                  <i class="dot-1"></i>
+                  <i class="dot-2"></i>
+              </div>
               <ul class="main-slider">
-                <li><a href="#"><img src="/img/slider-1.jpg" width="620" height="266" alt="Дрели"></a></li>
-                <li><a href=""><img src="/img/slider-2.jpg" width="620" height="266" alt="Первораторы"></a></li>
+                <li class="main-slider-item main-slider-item1"><img src="/img/slider-1.jpg" width="620" height="266" alt="Дрели">
+                  <span class="main-slider-name">Дрели</span>
+                  <span class="main-slider-desc">Соседям на радость!</span>
+                  <a class="button slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                </li>
+                <li class="main-slider-item main-slider-item2"><img src="/img/slider-2.jpg" width="620" height="266" alt="Первораторы">
+                  <span class="main-slider-name">Перфораторы</span>
+                  <span class="main-slider-desc">Настоящие мужские игрушки</span>
+                  <a class="button slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                </li>
               </ul>
 
               <ul class="specials">
@@ -222,25 +242,33 @@
 
           <!-- Hidden popup -->
 
-          <section class="appointment visually-hidden">
-            <h2 class="visually-hidden">Напишите нам</h2>
-            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-              <p class="appointment-item">
-                <label for="appointment-name">Ваше имя</label>
-                <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-              </p>
-              <p class="appointment-item">
-                <label for="appointment-email">Ваш e-mail</label>
-                <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
-              </p>
+          <section class="appointment container">
+             
+              <h2 class="visually-hidden">Напишите нам</h2>
+              <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
 
-              <label class="feedback-area" for="textarea-form">Текст письма:</label><br>
-              <textarea class="feedback-area-bar" placeholder="В свободной форме" name="text-area" id="textarea-form" ></textarea><br>
-      
-              <button class="button" type="submit">Отправить</button>
-      
-              <button class="button button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-            </form> 
+                <div class="appointment-wrap"> 
+                <div class="appointment-item-wrap">
+                    <p class="appointment-item">
+                      <label for="appointment-name">Ваше имя:</label>
+                      <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="appointment-item">
+                      <label for="appointment-email">Ваш e-mail:</label>
+                      <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+                    </p>
+                </div>
+
+                <label class="feedback-area" for="textarea-form">Текст письма:</label>
+                <textarea class="feedback-area-bar" placeholder="В свободной форме" name="text-area" id="textarea-form"></textarea>
+
+              <div class="appointment-button-wrap">
+                <button class="button " type="submit">Отправить</button>
+              </div>
+                <button class="button button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+              </div>
+              </form> 
+            
           </section>
 
 
@@ -298,12 +326,7 @@
 
 
     </footer>
-
-
-    <!-- Hidden pop-up -->
-
-
-    
-
+    <!-- Script -->
+    <script src="js/java-script.js"></script>
   </body>
 </html>
