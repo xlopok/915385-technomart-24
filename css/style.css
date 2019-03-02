@@ -270,6 +270,14 @@ a {
       text-align: left;
   }
 
+  .store-info .store-info-header {
+    width: 200px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+
+
   .bg-header-color {
       background-color: #f4f7f9;
       margin-bottom: 59px;
@@ -285,6 +293,17 @@ a {
       color: #ee3643;
       font-weight: 400;
   }
+
+  .bg-header-color .store-info-header {
+    margin: 0;
+
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #ee3643;
+    font-weight: 400;
+}
 
   .contact-info {
       width: 270px;
