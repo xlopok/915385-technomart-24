@@ -59,9 +59,9 @@ if(form) {
 
         if (!feedbackName.value || !feedbackPassword.value || !feedbackTextarea.value ) {
         evt.preventDefault();
-        // popupFeedback.classList.remove("modal-error");
-        alert("Заполните все поля, чтобы отправить форму");
-        // popupFeedback.classList.add("modal-error");
+        popupFeedback.classList.remove("modal-error");
+        // alert("Заполните все поля, чтобы отправить форму");
+        popupFeedback.classList.add("modal-error");
         }
     });
 };
